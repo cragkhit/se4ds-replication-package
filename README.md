@@ -90,10 +90,6 @@ Running all notebooks end-to-end regenerates every figure and statistical result
 - **Kappa notebook prerequisites.** `analysis_preliminary_study_kappa.ipynb` additionally depends on `scikit-learn`, which is pinned in `requirements.txt`.
 - **Reproducibility.** No notebook calls any random-number generator, so reruns produce bit-identical numeric output for a given pandas / numpy version pair. Figure-level differences (e.g., DPI, font kerning) may appear depending on the matplotlib backend.
 
-## Citing this replication package
-
-If you use this package, please cite the paper and this archive. A machine-readable citation is provided in `CITATION.cff`. Once archived on Zenodo, the package will receive a permanent DOI; please cite that DOI for any subsequent use.
-
 ## License
 
 - **Code** (notebooks, `analysis_utils.py`): MIT License, see `LICENSE`.
