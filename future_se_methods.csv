@@ -1,0 +1,19 @@
+id,response
+1,Huggingface
+2,ไม่มี
+3,ยังไม่ได้คิด
+4,ไม่มี
+5,library dependency management
+6,ยังไม่มี
+7,Nothing
+8,"Test-Driven Development (TDD):    1.Writing tests before writing the corresponding code.  2.Ensuring that the code meets the requirements defined by the tests.    Behavior-Driven Development (BDD)  1.Using natural language descriptions to define the behavior of the application.  2.Tools like Cucumber to bridge the communication gap between developers, testers, and business stakeholders.  3.Code Quality and Maintenance    Code Reviews  1.Regular peer reviews to ensure code quality and knowledge sharing.  2.Using tools like GitHub Pull Requests, GitLab Merge Requests, or Gerrit."
+9,s the Scrum methodology
+10,good
+11,"Projects with clear objectives and stable requirements can best use the waterfall method. Less experienced project managers and project teams, as well as teams whose composition changes frequently, may benefit the most from using the waterfall development methodology."
+12,good
+13,good
+14,Test-driven development (TDD) is a development approach where you write tests before writing the actual code. This practice encourages you to think deeply about the expected behaviour of your code and helps you design cleaner and more modular code.
+15,good
+16,no at the moment
+17,Agile method
+18,"No, not really."

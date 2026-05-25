@@ -1,0 +1,56 @@
+id,response
+1,เครื่องมือที่ช่วยวิเคราะห์ สำรวจข้อมูลเบื้องต้นอย่างครบถ้วน รอบด้านและรองรับข้อมูลขนาดใหญ่มากๆได้ รวมถึงทำความสะอาดข้อมูลให้พร้อมใช้ทำโมเดล
+2,เครื่องมือที่สามารถสำรองข้อมูลได้ในปริมาณมาก
+3,code ง่าย
+4,เครื่องมือที่สามารถแสดงให้เห็น dependency ในการทำงานระหว่างทีมได้
+5,All in one Framework ที่ทำทุก Process ได้ใน Framework เดียว
+6,เครื่องที่ช่วยให้ deploy model ได้ง่ายๆ ลดเวลา
+7,Dataiku
+8,sql version control
+9,Model comparing
+10,Present Dream
+11,Dream Report
+12,คิดว่าตัวเองยังรู้สึกเครื่องมือด้าน SE ไม่มากพอมากกว่า ฟังดูมีเครื่องมือน่าลองใช้เยอะมาก แต่เพิ่งเคยได้ยินตอนที่ทำแบบสอบถาม อยากให้มีการจัดอบรมการใช้ SE ในการทำ DS
+13,Message Queue ใช้ในการจัดการข้อมูลปริมาณมาก
+14,ai integration
+15,Akkio
+16,เครื่องมือที่อยากได้คือ AI assistant ที่สามารถทำการวิเคราะห์ข้อมูลอย่างเป็นอัตโนมัติ และมีความสามารถในการเรียนรู้เพื่อปรับปรุงตนเองตามการใช้งานของผู้ใช้ จะช่วยสร้างสรรค์และปรับปรุงวิธีการทำงานให้มีประสิทธิภาพมากยิ่งขึ้นตามความต้องการได้ จะเป็นเครื่องมือที่เปลี่ยนแปลงวิธีการทำงานอย่างรวดเร็วและมีประสิทธิภาพมากขึ้นในการจัดการข้อมูลและการตัดสินใจ
+17,ไม่มี
+18,Auto discovery hidden data relationship and deduplicate finding
+19,dream tool ที่สามารถจัดการข้อมูลด้านการขายสินค้าและบริการของธุรกิจต่างๆ
+20,เครื่องมือที่สามารถทำการตรวจสอบและประเมินความน่าเชื่อถือของข้อมูลได้อย่างอัตโนมัติ โดยเกี่ยวกับ consistency ใน database
+21,Airflow
+22,1) Auto convert prototype to production: data scientists สามารถสร้าง prototype app ขึ้นมาได้แต่อาจไม่ถูกต้องตามหลักการพัฒนา software และมีช่องโหว่ด้าน security การหาบุคลากร ML engineer การสื่อสารกับ IT การต้อง reimplement ใช้เวลา  2) Auto summary data quality problems and root causes: สามารถ capture ความผิดปกติแบบ multivariate ได้ (ไม่ใช่แค่ univariate outlier) และสามารถสรุป root cause ของ data quality problem ได้
+23,"Thinking about the generative AI that supports the engineers in automatically provisioning the infrastructure and pipelines with cost|time efficiency, for example converting prompts to the scripts of Infrastructure as Code (IAC)."
+24,เครื่องมือด้าน Data Observability
+25,ไม่ทราบ
+26,ยังไม่มี
+27,open-source tool ที่เราสามารถ customize component ได้เองว่าจะใช้ tool ตัวไหนกับ data science process ต่างๆ (เช่น เราสามารถกำหนดโปรเจคขึ้นมา แล้วเลือกให้มี tableau สำหรับขั้นตอน visualization / dashboard และมี jupyter notebook สำหรับการสร้าง ML model แบบที่เราสามารถ customize เองได้)
+28,แปลง business requirement เป็น code
+29,Intellij but on web like databricks
+30,SQL TECH CODING ADVANCE
+31,"Dream Tool for Data Science: Unified Data Science Ecosystem (UDE)  Overview:  The Unified Data Science Ecosystem (UDE) would be an all-in-one, seamlessly integrated platform designed to address the comprehensive needs of data scientists, data engineers, and machine learning practitioners. This tool would unify the entire data science workflow, from data ingestion and cleaning to model deployment and monitoring, within a single, cohesive interface.    Key Features:  Integrated Data Pipeline Management    Automated ETL Processes: Simplified drag-and-drop interface for designing data pipelines with built-in connectors for popular data sources (databases, APIs, cloud storage).  Real-Time Data Processing: Capabilities for handling streaming data and real-time analytics.  Advanced Data Cleaning and Preprocessing    Smart Suggestions: AI-powered recommendations for data cleaning and preprocessing steps based on dataset characteristics.  Interactive Data Wrangling: Intuitive tools for handling missing values, outliers, and data transformation with visual feedback.  Unified Development Environment    Code and No-Code Options: Support for both traditional coding (Python, R, SQL) and no-code/low-code interfaces for users with different expertise levels.  Collaborative Notebooks: Real-time collaboration features in Jupyter-like notebooks with version control and commenting.  Comprehensive Model Development and Evaluation    Automated Machine Learning (AutoML): Tools to automatically select, train, and tune machine learning models.  Custom Model Support: Flexibility to build and integrate custom models using popular frameworks (TensorFlow, PyTorch, Scikit-learn).  Explainability and Interpretability: Built-in tools for model interpretability and explainability, such as SHAP values and LIME.  Seamless Deployment and Monitoring    One-Click Deployment: Easy deployment to various environments (cloud, on-premises, edge) with minimal configuration.  Continuous Integration/Continuous Deployment (CI/CD): Integrated CI/CD pipelines for model updates and retraining.  Monitoring and Alerting: Real-time monitoring of model performance with alerts for data drift, performance degradation, and anomalies.  End-to-End Security and Compliance    Data Privacy and Governance: Tools for data masking, anonymization, and compliance with regulations like GDPR and CCPA.  Role-Based Access Control (RBAC): Fine-grained access control to ensure data security and integrity.  Knowledge Sharing and Collaboration    Project Management: Features for managing projects, tasks, and timelines within the platform.  Knowledge Repository: Centralized repository for storing and sharing code, models, datasets, and documentation.  Scalability and Performance    Elastic Compute Resources: Automatically scalable resources to handle varying workloads and large datasets.  Optimized Performance: Efficient execution of data processing and model training tasks, leveraging parallel computing and hardware acceleration.    Explanation:  The Unified Data Science Ecosystem (UDE) would revolutionize the data science workflow by providing a single platform that addresses all the challenges faced by data professionals. Current tools often require piecing together multiple disparate solutions, leading to inefficiencies and integration issues. UDE would streamline the entire process, enhance collaboration, ensure data security, and ultimately accelerate the path from data to insights."
+32,good
+33,Good
+34,good
+35,good
+36,Good
+37,good
+38,To make our process as easy as possible
+39,"My dream tool for data science would be DataSynth Maestro. It would seamlessly integrate intelligent data generation, automated cleaning, advanced transformation pipelines, interactive visualization, and end-to-end model deployment. This all-in-one platform would enhance efficiency, ensure data quality, and foster collaboration, making complex data science workflows simpler and more effective."
+40,"I'd like a visual tool where it is possible to code the single functions used during the data science process and connect/disconnect them together quickly by just clicking on them inside the tool. For example, I'd like to have three blocks like this: [input data] -> [remove missing values] -> [output data] where the [remove missing values] is a module, written by me, where I can implement different methods to perform the task and I can easily switch between them to see the effect on the output data (in this case, how many rows get removed) operating through a graphic interface."
+41,"Probably, my dream tool would be an advanced AI-powered evaluation system that can analyze multiple outputs generated by various models in response to user queries, and determine which results are the most relevant"
+42,"If I were to dream up a tool for data science, it would be an AI-powered data exploration and feature engineering assistant. This tool would intelligently analyze raw datasets, automatically identifying relevant patterns, correlations, and outliers. It would suggest and generate meaningful features based on the data's inherent characteristics and domain-specific knowledge, significantly reducing the time and effort required for feature engineering. Additionally, it would provide interactive visualizations and intuitive explanations to aid data scientists in understanding and interpreting the data more effectively. Essentially, this dream tool would streamline the initial stages of data preprocessing and exploration, empowering data scientists to focus more on modeling and insights generation."
+43,I dont have any
+44,"it is a tool that, given the specifications, already throws away the skeleton of the application"
+45,"an autoML tool like mljar, with a better SHAP integration + evaluation plots, wich also is connected to MLFlow so for the model exploratory part I can run a simple pipeline with the data and starting getting insights to further develop the model."
+46,"a tool that instantly takes the data that i want from a data file, without making a script, and also makes the corresponding graphs"
+47,A tool that collects and analyzes the data on your behalf. an automated tool.
+48,econometric trend analysis
+49,i dont know
+50,A tool that connects  a data mining tool such as Celonis and an accounting software in one tool.
+51,Don't have one specific in mind.
+52,"I'd like to have a single tool that load data, clean it, model it and prepare reports for business people."
+53,An AI tool which can analyse and model the data
+54,I would say a tool that uses AI to reduce the effort of coding and data sourcing which has an easy to use user interface to clearly state the outcome.
+55,"I want an all-encompassing analytical platform that would integrate data from disparate sources, cleanses and processes, using advanced AI algorithms and provides actionable insights."
