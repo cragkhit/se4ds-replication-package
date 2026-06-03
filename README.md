@@ -21,12 +21,18 @@ replication-package/
 ├── analysis_rq2.ipynb                                (RQ2: DS and SE challenges)
 ├── analysis_rq3.ipynb                                (RQ3: SE tool and practice adoption)
 ├── analysis_rq4.ipynb                                (RQ4: planned adoption and dream tools)
+├── online_questionnaire.pdf                          (the full survey instrument as administered, 29 pages)
 ├── se4ds-cleaned-30bccbed-filtered.csv               (main survey dataset, N=112)
 ├── coding_results.xlsx                               (preliminary-study coded interviews, 12 participants)
 ├── data_science_dream_tools_thematic_analysis.csv    (manual thematic coding behind Appendix C)
 ├── dream_tool_responses.csv                          (cached export of open-ended dream-tool answers)
 └── future_se_methods.csv                             (cached export of open-ended future-SE answers)
 ```
+
+## Survey instrument
+
+### `online_questionnaire.pdf`
+A PDF export of the full online questionnaire as administered to participants, covering all six survey parts (consent, demographics, DS framework awareness and adoption, DS-process phase frequency and challenge severity, SE challenges, SE tool adoption and usefulness, and SE practice adoption and future aspirations). The PDF preserves the exact question wording, answer options, Likert anchors, and skip logic that respondents saw, and matches the survey structure summarized in Table 1 of the paper (also reproduced in Appendix A). Use this file as the authoritative reference for how each column in `se4ds-cleaned-30bccbed-filtered.csv` was elicited.
 
 ## Datasets
 
@@ -89,6 +95,10 @@ Running all notebooks end-to-end regenerates every figure and statistical result
 - **Thai locale fonts.** A few cells render Thai survey labels. If matplotlib falls back to a glyph-less font, install a Thai-capable font such as `fonts-thai-tlwg` (Debian/Ubuntu) or `tlwg` via Homebrew on macOS, then add `plt.rcParams['font.family'] = 'TH Sarabun New'` (or another installed Thai font) in the cell that errors.
 - **Kappa notebook prerequisites.** `analysis_preliminary_study_kappa.ipynb` additionally depends on `scikit-learn`, which is pinned in `requirements.txt`.
 - **Reproducibility.** No notebook calls any random-number generator, so reruns produce bit-identical numeric output for a given pandas / numpy version pair. Figure-level differences (e.g., DPI, font kerning) may appear depending on the matplotlib backend.
+
+## Citing this replication package
+
+If you use this package, please cite the paper and this archive. A machine-readable citation is provided in `CITATION.cff`. Once archived on Zenodo, the package will receive a permanent DOI; please cite that DOI for any subsequent use.
 
 ## License
 
