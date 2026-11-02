@@ -1,0 +1,225 @@
+level,name,kind,in_initial_codebook,path
+0,Awareness of DS frameworks or processes,category,True,Awareness of DS frameworks or processes
+1,Aware but do not use any specific framework,code,True,Awareness of DS frameworks or processes/Aware but do not use any specific framework
+1,Not aware of any framework,code,True,Awareness of DS frameworks or processes/Not aware of any framework
+1,Use an existing framework,category,True,Awareness of DS frameworks or processes/Use an existing framework
+2,CRISP-DM,code,True,Awareness of DS frameworks or processes/Use an existing framework/CRISP-DM
+0,Challenges in DS during DS project development,category,True,Challenges in DS during DS project development
+1,Business understanding,category,True,Challenges in DS during DS project development/Business understanding
+2,High learning curve in biz understanding,code,True,Challenges in DS during DS project development/Business understanding/High learning curve in biz understanding
+2,Misunderstanding between DS team and users,code,True,Challenges in DS during DS project development/Business understanding/Misunderstanding between DS team and users
+2,New features requested,code,True,Challenges in DS during DS project development/Business understanding/New features requested
+1,Data preparation,category,True,Challenges in DS during DS project development/Data preparation
+2,Data cleansing,code,True,Challenges in DS during DS project development/Data preparation/Data cleansing
+2,Data inconsistency or data behavior shift or data drift,code,True,Challenges in DS during DS project development/Data preparation/Data inconsistency or data behavior shift or data drift
+2,Data version,code,True,Challenges in DS during DS project development/Data preparation/Data version
+2,Incomplete data,code,True,Challenges in DS during DS project development/Data preparation/Incomplete data
+1,Data Understanding,category,True,Challenges in DS during DS project development/Data Understanding
+2,High learning curve in data understanding,code,True,Challenges in DS during DS project development/Data Understanding/High learning curve in data understanding
+2,Incomplete data,code,True,Challenges in DS during DS project development/Data Understanding/Incomplete data
+2,Slow data exploration,code,True,Challenges in DS during DS project development/Data Understanding/Slow data exploration
+1,Deployment,category,True,Challenges in DS during DS project development/Deployment
+2,Data assertion problem and data observability and monitoring,code,True,Challenges in DS during DS project development/Deployment/Data assertion problem and data observability and monitoring
+2,Model Monitoring,code,True,Challenges in DS during DS project development/Deployment/Model Monitoring
+1,Documentation,code,True,Challenges in DS during DS project development/Documentation
+1,Evaluation,code,True,Challenges in DS during DS project development/Evaluation
+1,Modeling,category,True,Challenges in DS during DS project development/Modeling
+2,Different keywords,code,False,Challenges in DS during DS project development/Modeling/Different keywords
+2,Fixing bugs in model,code,True,Challenges in DS during DS project development/Modeling/Fixing bugs in model
+2,Highest effort,code,True,Challenges in DS during DS project development/Modeling/Highest effort
+2,New data sources,code,False,Challenges in DS during DS project development/Modeling/New data sources
+2,Revise with the users,code,True,Challenges in DS during DS project development/Modeling/Revise with the users
+2,Vesions Control,code,True,Challenges in DS during DS project development/Modeling/Vesions Control
+1,Others,category,True,Challenges in DS during DS project development/Others
+2,Analytic engineering,code,True,Challenges in DS during DS project development/Others/Analytic engineering
+2,communication,code,False,Challenges in DS during DS project development/Others/communication
+2,DBT,code,True,Challenges in DS during DS project development/Others/DBT
+2,legacy project,code,False,Challenges in DS during DS project development/Others/legacy project
+0,Challenges in SE during DS project development,category,True,Challenges in SE during DS project development
+1,Lengthy AB testing,code,False,Challenges in SE during DS project development/Lengthy AB testing
+1,Maintainability,category,True,Challenges in SE during DS project development/Maintainability
+2,No documentation,code,True,Challenges in SE during DS project development/Maintainability/No documentation
+1,Many stakeholders,code,True,Challenges in SE during DS project development/Many stakeholders
+1,No load test or integration test,code,True,Challenges in SE during DS project development/No load test or integration test
+1,Requirement changes,code,True,Challenges in SE during DS project development/Requirement changes
+1,Requirement gathering,code,True,Challenges in SE during DS project development/Requirement gathering
+1,Version control,code,True,Challenges in SE during DS project development/Version control
+0,Changes in development process and tools,category,True,Changes in development process and tools
+1,Current,category,True,Changes in development process and tools/Current
+2,Tools,category,True,Changes in development process and tools/Current/Tools
+3,Airflow,code,True,Changes in development process and tools/Current/Tools/Airflow
+3,Cloud services,code,True,Changes in development process and tools/Current/Tools/Cloud services
+3,data quality and data monitoring,code,False,Changes in development process and tools/Current/Tools/data quality and data monitoring
+3,Databricks,code,True,Changes in development process and tools/Current/Tools/Databricks
+3,Dataflow,code,True,Changes in development process and tools/Current/Tools/Dataflow
+3,DBT,code,False,Changes in development process and tools/Current/Tools/DBT
+3,Git repository,code,True,Changes in development process and tools/Current/Tools/Git repository
+3,Hadoop,code,True,Changes in development process and tools/Current/Tools/Hadoop
+3,Jira,code,True,Changes in development process and tools/Current/Tools/Jira
+3,Jupyter Notebook,code,True,Changes in development process and tools/Current/Tools/Jupyter Notebook
+3,Kanban board,code,True,Changes in development process and tools/Current/Tools/Kanban board
+3,MLFlow,code,True,Changes in development process and tools/Current/Tools/MLFlow
+3,ms team,code,False,Changes in development process and tools/Current/Tools/ms team
+3,Predefine models,code,True,Changes in development process and tools/Current/Tools/Predefine models
+3,Productionized tools,code,True,Changes in development process and tools/Current/Tools/Productionized tools
+3,pycharm,code,False,Changes in development process and tools/Current/Tools/pycharm
+3,Shared meeting note,code,True,Changes in development process and tools/Current/Tools/Shared meeting note
+3,SonarQube,code,True,Changes in development process and tools/Current/Tools/SonarQube
+3,Streamlit,code,True,Changes in development process and tools/Current/Tools/Streamlit
+3,Tensorflowserving,code,True,Changes in development process and tools/Current/Tools/Tensorflowserving
+3,Torchserve,code,True,Changes in development process and tools/Current/Tools/Torchserve
+1,Past,category,True,Changes in development process and tools/Past
+2,Practices,category,True,Changes in development process and tools/Past/Practices
+3,Local development,code,True,Changes in development process and tools/Past/Practices/Local development
+2,Tools,category,True,Changes in development process and tools/Past/Tools
+3,Coltjob,code,True,Changes in development process and tools/Past/Tools/Coltjob
+3,EC2,code,True,Changes in development process and tools/Past/Tools/EC2
+3,Git,code,True,Changes in development process and tools/Past/Tools/Git
+3,Hadoop,code,True,Changes in development process and tools/Past/Tools/Hadoop
+3,Jupyter Notebook,code,True,Changes in development process and tools/Past/Tools/Jupyter Notebook
+3,Python,code,True,Changes in development process and tools/Past/Tools/Python
+0,Differences in DS and SE projects,category,True,Differences in DS and SE projects
+1,SE has clearer scope and requirements,code,False,Differences in DS and SE projects/SE has clearer scope and requirements
+0,Evaluation: discuss with the client so that the client validates the result (translated from Thai),code,False,evaluation ก็คุยกับลูกค้าเพื่อให้ลูกค้า validate
+0,Longest Process in CRISP-DM,category,True,Longest Process in CRISP-DM
+1,Business understanding,code,True,Longest Process in CRISP-DM/Business understanding
+1,Data Preparation,code,True,Longest Process in CRISP-DM/Data Preparation
+1,Data understanding,code,True,Longest Process in CRISP-DM/Data understanding
+1,Deployment,code,False,Longest Process in CRISP-DM/Deployment
+1,Evaluation,code,False,Longest Process in CRISP-DM/Evaluation
+1,Modeling,code,True,Longest Process in CRISP-DM/Modeling
+0,Non DS product,code,True,Non DS product
+0,SE best practices used,category,True,SE best practices used
+1,Benefits,category,True,SE best practices used/Benefits
+2,Detect bugs during development,code,False,SE best practices used/Benefits/Detect bugs during development
+2,Get team's suggestion,code,True,SE best practices used/Benefits/Get team's suggestion
+2,Help following the plan,code,True,SE best practices used/Benefits/Help following the plan
+2,Increase efficiency in every step,code,True,SE best practices used/Benefits/Increase efficiency in every step
+2,Increase test coverage,code,True,SE best practices used/Benefits/Increase test coverage
+2,Reduce bugs before giving to users,code,True,SE best practices used/Benefits/Reduce bugs before giving to users
+2,Support team collaboration,code,False,SE best practices used/Benefits/Support team collaboration
+2,Tidy code and high readability,code,True,SE best practices used/Benefits/Tidy code and high readability
+2,Transfering the project,code,True,SE best practices used/Benefits/Transfering the project
+2,Update progress with the team,code,True,SE best practices used/Benefits/Update progress with the team
+1,Best practices,category,True,SE best practices used/Best practices
+2,Agile,category,True,SE best practices used/Best practices/Agile
+3,Scrum or Kanban board,code,True,SE best practices used/Best practices/Agile/Scrum or Kanban board
+3,Short releases or sprints,code,True,SE best practices used/Best practices/Agile/Short releases or sprints
+3,Stand-up meeting,code,True,SE best practices used/Best practices/Agile/Stand-up meeting
+2,Code review,code,True,SE best practices used/Best practices/Code review
+2,Coding convention,code,True,SE best practices used/Best practices/Coding convention
+2,DevOps,code,True,SE best practices used/Best practices/DevOps
+2,Effort estimation,code,True,SE best practices used/Best practices/Effort estimation
+2,Flow design,code,False,SE best practices used/Best practices/Flow design
+2,No specific method,code,True,SE best practices used/Best practices/No specific method
+2,Project planning,code,True,SE best practices used/Best practices/Project planning
+2,Requirements analysis and design,code,True,SE best practices used/Best practices/Requirements analysis and design
+2,Testing,category,True,SE best practices used/Best practices/Testing
+3,Exit criteria,code,True,SE best practices used/Best practices/Testing/Exit criteria
+3,Integration testing,code,True,SE best practices used/Best practices/Testing/Integration testing
+3,Model testing,code,True,SE best practices used/Best practices/Testing/Model testing
+3,UAT,code,True,SE best practices used/Best practices/Testing/UAT
+3,Unit test,code,True,SE best practices used/Best practices/Testing/Unit test
+3,Unspecified type of testing,code,True,SE best practices used/Best practices/Testing/Unspecified type of testing
+3,Usability testing,code,False,SE best practices used/Best practices/Testing/Usability testing
+2,UML,code,False,SE best practices used/Best practices/UML
+2,Use all 7 SE steps,code,True,SE best practices used/Best practices/Use all 7 SE steps
+2,Use case,code,True,SE best practices used/Best practices/Use case
+2,Version control,code,True,SE best practices used/Best practices/Version control
+0,SE best practices want to use,category,True,SE best practices want to use
+1,Agile,code,True,SE best practices want to use/Agile
+1,Cloud services,code,True,SE best practices want to use/Cloud services
+1,Code review,code,True,SE best practices want to use/Code review
+1,Containerization,code,True,SE best practices want to use/Containerization
+1,DevOps (include CI-CD),code,True,SE best practices want to use/DevOps (include CI-CD)
+1,Library suggestion,code,True,SE best practices want to use/Library suggestion
+1,Productionized tools,code,False,SE best practices want to use/Productionized tools
+1,Requirement gathering patterns,code,True,SE best practices want to use/Requirement gathering patterns
+1,Unit testing,code,True,SE best practices want to use/Unit testing
+1,Version control,code,True,SE best practices want to use/Version control
+0,SE process,category,False,SE process
+1,No use,code,False,SE process/No use
+0,Tools-Current,category,True,Tools-Current
+1,Adopted Tools,category,True,Tools-Current/Adopted Tools
+2,Cloud services,category,True,Tools-Current/Adopted Tools/Cloud services
+3,AWS,code,True,Tools-Current/Adopted Tools/Cloud services/AWS
+2,confluence,code,False,Tools-Current/Adopted Tools/confluence
+2,Design and Brainstorming,category,False,Tools-Current/Adopted Tools/Design and Brainstorming
+3,Figjam,code,False,Tools-Current/Adopted Tools/Design and Brainstorming/Figjam
+3,Figma,code,False,Tools-Current/Adopted Tools/Design and Brainstorming/Figma
+3,Miro,code,False,Tools-Current/Adopted Tools/Design and Brainstorming/Miro
+2,DS,category,True,Tools-Current/Adopted Tools/DS
+3,Airflow,code,True,Tools-Current/Adopted Tools/DS/Airflow
+3,Big Query,code,True,Tools-Current/Adopted Tools/DS/Big Query
+3,Blacklink,code,True,Tools-Current/Adopted Tools/DS/Blacklink
+3,CDSW Workbench,code,True,Tools-Current/Adopted Tools/DS/CDSW Workbench
+3,Data quality and data monitoring,code,True,Tools-Current/Adopted Tools/DS/Data quality and data monitoring
+3,Databricks,code,True,Tools-Current/Adopted Tools/DS/Databricks
+3,DBT,code,True,Tools-Current/Adopted Tools/DS/DBT
+3,Google Colab,code,True,Tools-Current/Adopted Tools/DS/Google Colab
+3,Hadoop,code,True,Tools-Current/Adopted Tools/DS/Hadoop
+3,Hive,code,True,Tools-Current/Adopted Tools/DS/Hive
+3,I Source,code,True,Tools-Current/Adopted Tools/DS/I Source
+3,Impala,code,True,Tools-Current/Adopted Tools/DS/Impala
+3,Jupyter lab,code,True,Tools-Current/Adopted Tools/DS/Jupyter lab
+3,Jupyter Notebook,code,True,Tools-Current/Adopted Tools/DS/Jupyter Notebook
+3,MLFlow,code,True,Tools-Current/Adopted Tools/DS/MLFlow
+3,Monitor logging,code,True,Tools-Current/Adopted Tools/DS/Monitor logging
+3,New Code,code,True,Tools-Current/Adopted Tools/DS/New Code
+3,Python libraries,code,True,Tools-Current/Adopted Tools/DS/Python libraries
+3,RapidMiner,code,True,Tools-Current/Adopted Tools/DS/RapidMiner
+3,SageMaker,code,True,Tools-Current/Adopted Tools/DS/SageMaker
+3,Streamlit,code,True,Tools-Current/Adopted Tools/DS/Streamlit
+3,Tableau,code,True,Tools-Current/Adopted Tools/DS/Tableau
+2,No tool or not utilized,code,True,Tools-Current/Adopted Tools/No tool or not utilized
+2,Programming and statistic analysis,category,True,Tools-Current/Adopted Tools/Programming and statistic analysis
+3,Pep8,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/Pep8
+3,Python,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/Python
+3,R,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/R
+3,SAS,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/SAS
+3,Scala,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/Scala
+3,SQL,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/SQL
+3,Tkinter,code,True,Tools-Current/Adopted Tools/Programming and statistic analysis/Tkinter
+2,Project Management,category,True,Tools-Current/Adopted Tools/Project Management
+3,Asana,code,False,Tools-Current/Adopted Tools/Project Management/Asana
+3,Jira,code,True,Tools-Current/Adopted Tools/Project Management/Jira
+3,Monday,code,True,Tools-Current/Adopted Tools/Project Management/Monday
+3,Trello,code,False,Tools-Current/Adopted Tools/Project Management/Trello
+2,SE,category,True,Tools-Current/Adopted Tools/SE
+3,Dependency checking tools,code,True,Tools-Current/Adopted Tools/SE/Dependency checking tools
+3,Git,code,True,Tools-Current/Adopted Tools/SE/Git
+3,Jenkins,code,True,Tools-Current/Adopted Tools/SE/Jenkins
+3,Pre-commit,code,True,Tools-Current/Adopted Tools/SE/Pre-commit
+3,SonarQube,code,True,Tools-Current/Adopted Tools/SE/SonarQube
+3,TKinter,code,True,Tools-Current/Adopted Tools/SE/TKinter
+3,"Use case, business flow",code,True,"Tools-Current/Adopted Tools/SE/Use case, business flow"
+2,Testing and Feedback,category,False,Tools-Current/Adopted Tools/Testing and Feedback
+3,AB Testing Maze,code,False,Tools-Current/Adopted Tools/Testing and Feedback/AB Testing Maze
+3,Google Forms,code,False,Tools-Current/Adopted Tools/Testing and Feedback/Google Forms
+3,Survey Question Pro,code,False,Tools-Current/Adopted Tools/Testing and Feedback/Survey Question Pro
+1,Problems,category,True,Tools-Current/Problems
+2,Cannot evaluate model due to modified data (hashed),code,True,Tools-Current/Problems/Cannot evaluate model due to modified data (hashed)
+2,Connections between services from different vendors,code,True,Tools-Current/Problems/Connections between services from different vendors
+2,cost,code,False,Tools-Current/Problems/cost
+2,Difficulty in deployment,code,True,Tools-Current/Problems/Difficulty in deployment
+2,No or few documentation,code,True,Tools-Current/Problems/No or few documentation
+2,Not using tools,code,True,Tools-Current/Problems/Not using tools
+2,Slow to run pipeline,code,True,Tools-Current/Problems/Slow to run pipeline
+0,Tools-Future,category,True,Tools-Future
+1,Auto cleaning of data,code,True,Tools-Future/Auto cleaning of data
+1,Auto visualization,code,True,Tools-Future/Auto visualization
+1,CODE SUGGESTION,code,False,Tools-Future/CODE SUGGESTION
+1,Collaboration tool,code,True,Tools-Future/Collaboration tool
+1,cost monitoring,code,False,Tools-Future/cost monitoring
+1,Data quality measurement,code,True,Tools-Future/Data quality measurement
+1,deployment helper,code,False,Tools-Future/deployment helper
+1,Detection of data problems,code,True,Tools-Future/Detection of data problems
+1,DORA metrics for data products,code,True,Tools-Future/DORA metrics for data products
+1,Guarantee data behavior after data governance or PDPA,code,True,Tools-Future/Guarantee data behavior after data governance or PDPA
+1,Integrating the DS project with client systems,code,True,Tools-Future/Integrating the DS project with client systems
+1,Integration Tools to monitor all phases of development and maintenance,code,True,Tools-Future/Integration Tools to monitor all phases of development and maintenance
+1,maintain code quality,code,False,Tools-Future/maintain code quality
+1,Suggestion of library to use,code,True,Tools-Future/Suggestion of library to use
+1,Task-Workflow scheduling,code,True,Tools-Future/Task-Workflow scheduling
+1,Unrestricted tool use (AWS) without the organization restrictions,code,True,Tools-Future/Unrestricted tool use (AWS) without the organization restrictions
+0,Types of DS products,code,True,Types of DS products

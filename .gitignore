@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Cached outputs that should be regenerated from notebooks
+# (commented out by default: we ship these for reviewer convenience)
+# dream_tool_responses.csv
+# future_se_methods.csv

@@ -1,0 +1,663 @@
+%% Supplementary material for:
+%% "Software Engineering Practices in Data Science Projects:
+%%  Adoption Patterns, Challenges, and Gaps from the Practitioner's Perspective"
+%% This document contains the full code-to-theme mapping from the
+%% preliminary interview study (Supplement S1) and the dream-tool
+%% categorization (Supplement S2), which were moved out of the paper
+%% appendix into this replication package for space reasons, and the
+%% initial and final interview codebooks (Supplement S3).
+
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+\title{Supplementary Material\\[4pt]
+\large Software Engineering Practices in Data Science Projects:\\
+Adoption Patterns, Challenges, and Gaps from the Practitioner's Perspective}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent This document accompanies the replication package. Supplement~S1
+lists the full code-to-theme mapping from the thematic analysis of
+the 12 semi-structured interviews (source data: \texttt{coding\_results.xlsx}).
+Supplement~S2 lists the translated dream-tool survey responses and their
+assigned categories (source data:
+\texttt{data\_science\_dream\_tools\_thematic\_analysis.csv}).
+Supplement~S3 lists the initial and final codebooks of the interview coding
+(source data: \texttt{codebook.csv}).
+
+\section*{Supplement S1: Full Code-to-Theme Mapping}
+\label{sec:supp_codes}
+
+This supplement lists every consolidated code that emerged from the thematic analysis of the 12 semi-structured interviews, organized by theme and (where applicable) sub-theme. Counts give the total number of times each code was applied across all 12 participants and all 12 interview questions in the consolidated coding sheet. A machine-readable version is provided in \texttt{code\_to\_theme\_mapping.csv}.
+
+\begin{longtable}{@{}p{3.5cm} p{3.5cm} p{6.0cm} c@{}}
+\caption{Full code-to-theme mapping from the preliminary-study thematic analysis (78 codes, 100 total mentions).}
+\label{tab:supp_codes} \\
+\toprule
+\textbf{Theme} & \textbf{Sub-theme} & \textbf{Code} & \textbf{Mentions} \\
+\midrule
+\endfirsthead
+\multicolumn{4}{l}{\textit{(continued from previous page)}} \\
+\toprule
+\textbf{Theme} & \textbf{Sub-theme} & \textbf{Code} & \textbf{Mentions} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\textit{(continued on next page)}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+
+% Theme 1 — DS process awareness & framework adoption
+Theme 1: DS process awareness \& framework adoption & ---
+  & Aware but do not use any specific framework & 3 \\
+   &
+  & CRISP-DM & 3 \\
+\midrule
+
+% Theme 2 — DS lifecycle phases & effort distribution
+Theme 2: DS lifecycle phases \& effort distribution & ---
+  & Data preparation & 4 \\
+   &
+  & Modeling & 2 \\
+   &
+  & Business understanding & 1 \\
+   &
+  & Data cleansing & 1 \\
+   &
+  & Evaluation & 1 \\
+   &
+  & Deployment & 1 \\
+\midrule
+
+% Theme 3 — DS challenges
+Theme 3: DS challenges
+  & Theme 3a: Data quality, drift \& evaluation
+  & Data inconsistency or data behavior shift / data drift & 1 \\
+   &
+  & Data assertion problem / data observability and monitoring & 1 \\
+   &
+  & Lengthy A/B testing & 1 \\
+   &
+  & Cannot evaluate model due to modified data (hashed) & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 3b: Requirements and communication
+  & Misunderstanding between DS team and users & 1 \\
+   &
+  & Many stakeholders & 1 \\
+   &
+  & Requirement changes & 1 \\
+   &
+  & Requirement gathering & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 3c: Maintainability and analytic engineering practice
+  & No documentation & 1 \\
+   &
+  & Analytic engineering & 1 \\
+   &
+  & DBT & 1 \\
+\midrule
+
+% Theme 4 — SE practices adopted
+Theme 4: SE practices adopted
+  & Theme 4a: Agile coordination
+  & Stand-up meeting & 3 \\
+   &
+  & Agile & 1 \\
+   &
+  & Scrum or Kanban board & 1 \\
+   &
+  & Short releases or sprints & 1 \\
+   &
+  & Get team's suggestion & 1 \\
+   &
+  & Help following the plan & 1 \\
+   &
+  & Update progress with the team & 1 \\
+   &
+  & Use all 7 SE steps & 1 \\
+   &
+  & Requirements analysis and design & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 4b: Testing, quality \& version control
+  & Integration testing & 1 \\
+   &
+  & Model testing & 1 \\
+   &
+  & UAT (User Acceptance Testing) & 1 \\
+   &
+  & Exit criteria & 1 \\
+   &
+  & Pre-commit & 1 \\
+   &
+  & SonarQube & 1 \\
+   &
+  & Version control & 1 \\
+\midrule
+
+% Theme 5: Future
+Theme 5: Future
+  & Theme 5a: Desired SE practices
+  & Cloud services & 1 \\
+   &
+  & DevOps (including CI/CD) & 1 \\
+   &
+  & Requirement gathering patterns & 1 \\
+   &
+  & Maintain code quality & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 5b: Dream tools (automation, monitoring \& integration)
+  & Auto visualization & 2 \\
+   &
+  & Detection of data problems & 1 \\
+   &
+  & Data quality measurement & 1 \\
+   &
+  & Guarantee data behavior after data governance / PDPA & 1 \\
+   &
+  & DORA metrics for data products & 1 \\
+   &
+  & Integrating the DS project with client systems & 1 \\
+   &
+  & Collaboration tool & 1 \\
+   &
+  & Unrestricted tool use (AWS) without organizational restrictions & 1 \\
+\midrule
+
+% Theme 6: Tools
+Theme 6: Tools: usage and challenges
+  & Theme 6a: Languages, notebooks \& IDEs
+  & Python libraries & 3 \\
+   &
+  & Python & 2 \\
+   &
+  & R & 1 \\
+   &
+  & SAS & 1 \\
+   &
+  & Scala & 1 \\
+   &
+  & Jupyter Notebook & 1 \\
+   &
+  & Jupyter Lab & 1 \\
+   &
+  & PyCharm & 1 \\
+   &
+  & CDSW Workbench & 1 \\
+   &
+  & Local development & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 6b: Cloud, data engineering \& model serving
+  & AWS & 3 \\
+   &
+  & SageMaker & 2 \\
+   &
+  & Tableau & 2 \\
+   &
+  & EC2 & 1 \\
+   &
+  & Big Query & 1 \\
+   &
+  & Hadoop & 1 \\
+   &
+  & Databricks & 1 \\
+   &
+  & Dataflow & 1 \\
+   &
+  & Airflow & 1 \\
+   &
+  & Coltjob & 1 \\
+   &
+  & Streamlit & 1 \\
+   &
+  & TensorFlow Serving & 1 \\
+   &
+  & TorchServe & 1 \\
+   &
+  & Predefined models & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 6c: Project management \& collaboration
+  & Jira & 3 \\
+   &
+  & Git & 3 \\
+   &
+  & Kanban board & 1 \\
+   &
+  & Backlink & 1 \\
+   &
+  & I~Source & 1 \\
+\cmidrule(lr){2-4}
+  & Theme 6d: Tool challenges
+  & Connections between services from different vendors & 1 \\
+   &
+  & Not using tools & 1 \\
+\end{longtable}
+
+\clearpage
+
+\section*{Supplement S2: Dream Tool Categorization}
+\label{sec:supp_dream_tools}
+
+This supplement lists the 55 substantive responses to the open-ended ``dream tool'' survey question, translated into English where the original response was in Thai, together with the categories assigned during the manual thematic grouping. The original-language responses and the empirical rationale for each category assignment are provided in \texttt{data\_science\_dream\_tools\_thematic\_analysis.csv}.
+
+\begin{longtable}{l p{8.5cm} p{4.5cm}}
+\caption{Dream tool responses and their assigned categories}
+\label{tab:supp_dream_tools} \\
+\toprule
+\textbf{ID} & \textbf{Response (Translated)} & \textbf{Categories} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{l}{\textit{(continued from previous page)}} \\
+\midrule
+\textbf{ID} & \textbf{Response (Translated)} & \textbf{Categories} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{3}{r}{\textit{(continued on next page)}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+1 & A tool that comprehensively and holistically helps analyze and explore preliminary data, supports extremely large-scale datasets, and cleans the data to be ready for modeling. (translated from Thai) & All-in-One Platforms; Data Mgmt \& Quality \\
+\addlinespace
+2 & A tool capable of backing up large volumes of data. (translated from Thai) & Data Mgmt \& Quality \\
+\addlinespace
+3 & Easy coding / Simple code. (translated from Thai) & Visual Coding \& IDEs \\
+\addlinespace
+4 & A tool that can visualize cross-team work dependencies. (translated from Thai) & Software Eng \& MLOps \\
+\addlinespace
+5 & An All-in-one framework that can execute every process within a single framework. (translated from Thai) & All-in-One Platforms \\
+\addlinespace
+6 & A tool that helps deploy models easily and reduces deployment time. (translated from Thai) & Software Eng \& MLOps \\
+\addlinespace
+7 & Dataiku & All-in-One Platforms \\
+\addlinespace
+8 & sql version control & Software Eng \& MLOps \\
+\addlinespace
+9 & Model comparing & Visualization \& Reporting \\
+\addlinespace
+10 & Present Dream & Visualization \& Reporting \\
+\addlinespace
+11 & Dream Report & Visualization \& Reporting \\
+\addlinespace
+12 & I feel like my knowledge of Software Engineering (SE) tools is not sufficient yet. It sounds like there are many interesting tools to try, but I only just heard about them when filling out this questionnaire. I would like to have training sessions arranged on applying SE practices to Data Science (DS). (translated from Thai) & Software Eng \& MLOps \\
+\addlinespace
+13 & Message Queue for managing large volumes of data. (translated from Thai) & Data Mgmt \& Quality; Software Eng \& MLOps \\
+\addlinespace
+14 & ai integration & AI \& Automation \\
+\addlinespace
+15 & Akkio & AI \& Automation; All-in-One Platforms \\
+\addlinespace
+16 & The dream tool I want is an AI assistant capable of automatically analyzing data and learning to improve itself based on user behavior. It would help generate and optimize workflows to be much more efficient according to dynamic needs. This would be a tool that rapidly transforms work processes, making data management and decision-making far more efficient. (translated from Thai) & AI \& Automation; All-in-One Platforms \\
+\addlinespace
+17 & None. (translated from Thai) & No Specific Tool \\
+\addlinespace
+18 & Auto discovery hidden data relationship and deduplicate finding & AI \& Automation; Data Mgmt \& Quality \\
+\addlinespace
+19 & A dream tool capable of managing sales and service data across various businesses. (translated from Thai) & Data Mgmt \& Quality \\
+\addlinespace
+20 & A tool capable of automatically checking and assessing data reliability, specifically regarding database consistency. (translated from Thai) & Data Mgmt \& Quality; AI \& Automation \\
+\addlinespace
+21 & Airflow & Software Eng \& MLOps; Data Mgmt \& Quality \\
+\addlinespace
+22 & 1) Auto convert prototype to production: Data scientists can build prototype apps, but they might not follow proper software development principles and can have security vulnerabilities. Finding ML engineers, communicating with IT, and needing to reimplement prototypes takes time. 2) Auto summary data quality problems and root causes: Capable of capturing multivariate anomalies (not just univariate outliers) and summarizing the root causes of data quality problems. (translated from Thai) & AI \& Automation; Software Eng \& MLOps; Data Mgmt \& Quality \\
+\addlinespace
+23 & Thinking about the generative AI that supports the engineers in automatically provisioning the infrastructure and pipelines with cost\textbar{}time efficiency, for example converting prompts to the scripts of Infrastructure as Code (IAC). & AI \& Automation; Software Eng \& MLOps \\
+\addlinespace
+24 & Data Observability tools. (translated from Thai) & Data Mgmt \& Quality; Software Eng \& MLOps \\
+\addlinespace
+25 & Don't know / Unknown. (translated from Thai) & No Specific Tool \\
+\addlinespace
+26 & None yet. (translated from Thai) & No Specific Tool \\
+\addlinespace
+27 & An open-source tool where we can customize components themselves to decide which tool to use across different data science processes (e.g., we can set up a project and choose to integrate Tableau for the visualization/dashboard phase, and a Jupyter notebook for building the ML model, all in a fully customizable manner). (translated from Thai) & All-in-One Platforms; Visual Coding \& IDEs \\
+\addlinespace
+28 & Translating business requirements into code. (translated from Thai) & AI \& Automation; Visual Coding \& IDEs \\
+\addlinespace
+29 & Intellij but on web like databricks & Visual Coding \& IDEs; Software Eng \& MLOps \\
+\addlinespace
+30 & SQL TECH CODING ADVANCE & Visual Coding \& IDEs \\
+\addlinespace
+31 & Dream Tool for Data Science: Unified Data Science Ecosystem (UDE) ... (truncated due to very long text) & All-in-One Platforms; AI \& Automation; Data Mgmt \& Quality; Software Eng \& MLOps; Visualization \& Reporting \\
+\addlinespace
+32 & good & No Specific Tool \\
+\addlinespace
+33 & Good & No Specific Tool \\
+\addlinespace
+34 & good & No Specific Tool \\
+\addlinespace
+35 & good & No Specific Tool \\
+\addlinespace
+36 & Good & No Specific Tool \\
+\addlinespace
+37 & good & No Specific Tool \\
+\addlinespace
+38 & To make our process as easy as possible & All-in-One Platforms \\
+\addlinespace
+39 & My dream tool for data science would be DataSynth Maestro. It would seamlessly integrate intelligent data generation, automated cleaning, advanced transformation pipelines, interactive visualization, and end-to-end model deployment. This all-in-one platform would enhance efficiency, ensure data quality, and foster collaboration, making complex data science workflows simpler and more effective. & All-in-One Platforms; AI \& Automation; Data Mgmt \& Quality; Software Eng \& MLOps; Visualization \& Reporting \\
+\addlinespace
+40 & I'd like a visual tool where it is possible to code the single functions used during the data science process and connect/disconnect them together quickly by just clicking on them inside the tool. For example, I'd like to have three blocks like this: [input data] -\textgreater{} [remove missing values] -\textgreater{} [output data] where the [remove missing values] is a module, written by me, where I can implement different methods to perform the task and I can easily switch between them to see the effect on the output data (in this case, how many rows get removed) operating through a graphic interface. & Visual Coding \& IDEs; Software Eng \& MLOps \\
+\addlinespace
+41 & Probably, my dream tool would be an advanced AI-powered evaluation system that can analyze multiple outputs generated by various models in response to user queries, and determine which results are the most relevant & AI \& Automation; Visualization \& Reporting \\
+\addlinespace
+42 & If I were to dream up a tool for data science, it would be an AI-powered data exploration and feature engineering assistant. This tool would intelligently analyze raw datasets, automatically identifying relevant patterns, correlations, and outliers. It would suggest and generate meaningful features based on the data's inherent characteristics and domain-specific knowledge, significantly reducing the time and effort required for feature engineering. Additionally, it would provide interactive visualizations and intuitive explanations to aid data scientists in understanding and interpreting the data more effectively. Essentially, this dream tool would streamline the initial stages of data preprocessing and exploration, empowering data scientists to focus more on modeling and insights generation. & AI \& Automation; Data Mgmt \& Quality; Visualization \& Reporting \\
+\addlinespace
+43 & I dont have any & No Specific Tool \\
+\addlinespace
+44 & it is a tool that, given the specifications, already throws away the skeleton of the application & Software Eng \& MLOps; AI \& Automation \\
+\addlinespace
+45 & an autoML tool like mljar, with a better SHAP integration + evaluation plots, wich also is connected to MLFlow so for the model exploratory part I can run a simple pipeline with the data and starting getting insights to further develop the model. & AI \& Automation; Visualization \& Reporting; Software Eng \& MLOps \\
+\addlinespace
+46 & a tool that instantly takes the data that i want from a data file, without making a script, and also makes the corresponding graphs & AI \& Automation; Visual Coding \& IDEs; Visualization \& Reporting \\
+\addlinespace
+47 & A tool that collects and analyzes the data on your behalf. an automated tool. & AI \& Automation; Data Mgmt \& Quality \\
+\addlinespace
+48 & econometric trend analysis & Visualization \& Reporting \\
+\addlinespace
+49 & i dont know & No Specific Tool \\
+\addlinespace
+50 & A tool that connects  a data mining tool such as Celonis and an accounting software in one tool. & Data Mgmt \& Quality \\
+\addlinespace
+51 & Don't have one specific in mind. & No Specific Tool \\
+\addlinespace
+52 & I'd like to have a single tool that load data, clean it, model it and prepare reports for business people. & All-in-One Platforms; Visualization \& Reporting \\
+\addlinespace
+53 & An AI tool which can analyse and model the data & AI \& Automation \\
+\addlinespace
+54 & I would say a tool that uses AI to reduce the effort of coding and data sourcing which has an easy to use user interface to clearly state the outcome. & AI \& Automation; Visual Coding \& IDEs; Visualization \& Reporting \\
+\addlinespace
+55 & I want an all-encompassing analytical platform that would integrate data from disparate sources, cleanses and processes, using advanced AI algorithms and provides actionable insights. & All-in-One Platforms; AI \& Automation; Data Mgmt \& Quality; Visualization \& Reporting \\
+%
+\end{longtable}
+
+
+\clearpage
+\section*{Supplement S3: Initial and Final Codebooks}
+\label{sec:supp_codebook}
+
+This supplement lists the codebook of the interview coding, exported from NVivo.
+The initial codebook, which all coders received before coding, had 187 entries: 12 top-level categories, most of which follow the interview questions, organized into sub-categories and 154 codes.
+During coding, the coders added codes when no existing code fitted a statement, which gave the final codebook of 224 entries (187 codes) listed below.
+Entries marked with $^\dagger$ were not in the initial codebook, and two codes were renamed (``High learning curve'' under Business understanding and under Data Understanding).
+Categories (in bold) could also be applied as codes, for example Data preparation.
+A further 16 codes were added in individual coders' sheets of \texttt{coding\_results.xlsx} and resolved at consensus (see the paper, Section~3.2.1).
+A machine-readable version is provided in \texttt{codebook.csv}.
+
+Table~\ref{tab:supp_category_theme} shows how the codebook categories relate to the six themes of the paper (Table~3).
+The themes were built from the codes applied at least once: the categories gave a first grouping, codes were then moved to the theme that matched their content, categories on the same topic were merged, and broad themes were split into sub-themes.
+Categories without any applied code do not appear in the themes.
+
+\begin{table}[h]
+\centering
+\caption{Codebook categories and the themes they feed.}
+\label{tab:supp_category_theme}
+\begin{tabular}{@{}p{7.5cm} p{7cm}@{}}
+\toprule
+\textbf{Codebook category (applied codes)} & \textbf{Theme in the paper} \\
+\midrule
+Awareness of DS frameworks or processes & Theme 1 \\
+Challenges in DS during DS project development: the CRISP-DM phase codes and data cleansing, applied to the question on the time spent per phase (Q1a) & Theme 2 \\
+Challenges in DS during DS project development: the specific challenges & Theme 3 (3a, 3b, or 3c) \\
+Challenges in SE during DS project development & Theme 3 (3a, 3b, or 3c); version control to Theme 4b \\
+SE best practices used (practices and their benefits) & Theme 4 (4a or 4b) \\
+SE best practices want to use & Theme 5a \\
+Changes in development process and tools (current and past tools) & Theme 6 \\
+Tools-Current: adopted tools & Theme 6 (6a to 6c); Pre-commit and SonarQube to Theme 4b \\
+Tools-Current: problems & Theme 6d; ``Cannot evaluate model due to modified data'' to Theme 3a \\
+Tools-Future & Theme 5b; ``maintain code quality'' to Theme 5a \\
+Differences in DS and SE projects, Longest Process in CRISP-DM, Non DS product, Types of DS products, SE process & No applied code \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{longtable}{@{}p{15cm}@{}}
+\caption{Final codebook of the interview coding (224 entries); $^\dagger$ marks entries added after the initial codebook.}
+\label{tab:supp_codebook} \\
+\toprule
+\textbf{Category / code} \\
+\midrule
+\endfirsthead
+\multicolumn{1}{l}{\textit{(continued from previous page)}} \\
+\toprule
+\textbf{Category / code} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\hspace*{0.0em}\textbf{Awareness of DS frameworks or processes} \\
+\hspace*{1.5em}Aware but do not use any specific framework \\
+\hspace*{1.5em}Not aware of any framework \\
+\hspace*{1.5em}\textbf{Use an existing framework} \\
+\hspace*{3.0em}CRISP-DM \\
+\hspace*{0.0em}\textbf{Challenges in DS during DS project development} \\
+\hspace*{1.5em}\textbf{Business understanding} \\
+\hspace*{3.0em}High learning curve in biz understanding \\
+\hspace*{3.0em}Misunderstanding between DS team and users \\
+\hspace*{3.0em}New features requested \\
+\hspace*{1.5em}\textbf{Data preparation} \\
+\hspace*{3.0em}Data cleansing \\
+\hspace*{3.0em}Data inconsistency or data behavior shift or data drift \\
+\hspace*{3.0em}Data version \\
+\hspace*{3.0em}Incomplete data \\
+\hspace*{1.5em}\textbf{Data Understanding} \\
+\hspace*{3.0em}High learning curve in data understanding \\
+\hspace*{3.0em}Incomplete data \\
+\hspace*{3.0em}Slow data exploration \\
+\hspace*{1.5em}\textbf{Deployment} \\
+\hspace*{3.0em}Data assertion problem and data observability and monitoring \\
+\hspace*{3.0em}Model Monitoring \\
+\hspace*{1.5em}Documentation \\
+\hspace*{1.5em}Evaluation \\
+\hspace*{1.5em}\textbf{Modeling} \\
+\hspace*{3.0em}Different keywords$^\dagger$ \\
+\hspace*{3.0em}Fixing bugs in model \\
+\hspace*{3.0em}Highest effort \\
+\hspace*{3.0em}New data sources$^\dagger$ \\
+\hspace*{3.0em}Revise with the users \\
+\hspace*{3.0em}Vesions Control \\
+\hspace*{1.5em}\textbf{Others} \\
+\hspace*{3.0em}Analytic engineering \\
+\hspace*{3.0em}communication$^\dagger$ \\
+\hspace*{3.0em}DBT \\
+\hspace*{3.0em}legacy project$^\dagger$ \\
+\hspace*{0.0em}\textbf{Challenges in SE during DS project development} \\
+\hspace*{1.5em}Lengthy AB testing$^\dagger$ \\
+\hspace*{1.5em}\textbf{Maintainability} \\
+\hspace*{3.0em}No documentation \\
+\hspace*{1.5em}Many stakeholders \\
+\hspace*{1.5em}No load test or integration test \\
+\hspace*{1.5em}Requirement changes \\
+\hspace*{1.5em}Requirement gathering \\
+\hspace*{1.5em}Version control \\
+\hspace*{0.0em}\textbf{Changes in development process and tools} \\
+\hspace*{1.5em}\textbf{Current} \\
+\hspace*{3.0em}\textbf{Tools} \\
+\hspace*{4.5em}Airflow \\
+\hspace*{4.5em}Cloud services \\
+\hspace*{4.5em}data quality and data monitoring$^\dagger$ \\
+\hspace*{4.5em}Databricks \\
+\hspace*{4.5em}Dataflow \\
+\hspace*{4.5em}DBT$^\dagger$ \\
+\hspace*{4.5em}Git repository \\
+\hspace*{4.5em}Hadoop \\
+\hspace*{4.5em}Jira \\
+\hspace*{4.5em}Jupyter Notebook \\
+\hspace*{4.5em}Kanban board \\
+\hspace*{4.5em}MLFlow \\
+\hspace*{4.5em}ms team$^\dagger$ \\
+\hspace*{4.5em}Predefine models \\
+\hspace*{4.5em}Productionized tools \\
+\hspace*{4.5em}pycharm$^\dagger$ \\
+\hspace*{4.5em}Shared meeting note \\
+\hspace*{4.5em}SonarQube \\
+\hspace*{4.5em}Streamlit \\
+\hspace*{4.5em}Tensorflowserving \\
+\hspace*{4.5em}Torchserve \\
+\hspace*{1.5em}\textbf{Past} \\
+\hspace*{3.0em}\textbf{Practices} \\
+\hspace*{4.5em}Local development \\
+\hspace*{3.0em}\textbf{Tools} \\
+\hspace*{4.5em}Coltjob \\
+\hspace*{4.5em}EC2 \\
+\hspace*{4.5em}Git \\
+\hspace*{4.5em}Hadoop \\
+\hspace*{4.5em}Jupyter Notebook \\
+\hspace*{4.5em}Python \\
+\hspace*{0.0em}\textbf{Differences in DS and SE projects} \\
+\hspace*{1.5em}SE has clearer scope and requirements$^\dagger$ \\
+\hspace*{0.0em}Evaluation: discuss with the client so that the client validates the result (translated from Thai)$^\dagger$ \\
+\hspace*{0.0em}\textbf{Longest Process in CRISP-DM} \\
+\hspace*{1.5em}Business understanding \\
+\hspace*{1.5em}Data Preparation \\
+\hspace*{1.5em}Data understanding \\
+\hspace*{1.5em}Deployment$^\dagger$ \\
+\hspace*{1.5em}Evaluation$^\dagger$ \\
+\hspace*{1.5em}Modeling \\
+\hspace*{0.0em}Non DS product \\
+\hspace*{0.0em}\textbf{SE best practices used} \\
+\hspace*{1.5em}\textbf{Benefits} \\
+\hspace*{3.0em}Detect bugs during development$^\dagger$ \\
+\hspace*{3.0em}Get team's suggestion \\
+\hspace*{3.0em}Help following the plan \\
+\hspace*{3.0em}Increase efficiency in every step \\
+\hspace*{3.0em}Increase test coverage \\
+\hspace*{3.0em}Reduce bugs before giving to users \\
+\hspace*{3.0em}Support team collaboration$^\dagger$ \\
+\hspace*{3.0em}Tidy code and high readability \\
+\hspace*{3.0em}Transfering the project \\
+\hspace*{3.0em}Update progress with the team \\
+\hspace*{1.5em}\textbf{Best practices} \\
+\hspace*{3.0em}\textbf{Agile} \\
+\hspace*{4.5em}Scrum or Kanban board \\
+\hspace*{4.5em}Short releases or sprints \\
+\hspace*{4.5em}Stand-up meeting \\
+\hspace*{3.0em}Code review \\
+\hspace*{3.0em}Coding convention \\
+\hspace*{3.0em}DevOps \\
+\hspace*{3.0em}Effort estimation \\
+\hspace*{3.0em}Flow design$^\dagger$ \\
+\hspace*{3.0em}No specific method \\
+\hspace*{3.0em}Project planning \\
+\hspace*{3.0em}Requirements analysis and design \\
+\hspace*{3.0em}\textbf{Testing} \\
+\hspace*{4.5em}Exit criteria \\
+\hspace*{4.5em}Integration testing \\
+\hspace*{4.5em}Model testing \\
+\hspace*{4.5em}UAT \\
+\hspace*{4.5em}Unit test \\
+\hspace*{4.5em}Unspecified type of testing \\
+\hspace*{4.5em}Usability testing$^\dagger$ \\
+\hspace*{3.0em}UML$^\dagger$ \\
+\hspace*{3.0em}Use all 7 SE steps \\
+\hspace*{3.0em}Use case \\
+\hspace*{3.0em}Version control \\
+\hspace*{0.0em}\textbf{SE best practices want to use} \\
+\hspace*{1.5em}Agile \\
+\hspace*{1.5em}Cloud services \\
+\hspace*{1.5em}Code review \\
+\hspace*{1.5em}Containerization \\
+\hspace*{1.5em}DevOps (include CI-CD) \\
+\hspace*{1.5em}Library suggestion \\
+\hspace*{1.5em}Productionized tools$^\dagger$ \\
+\hspace*{1.5em}Requirement gathering patterns \\
+\hspace*{1.5em}Unit testing \\
+\hspace*{1.5em}Version control \\
+\hspace*{0.0em}\textbf{SE process}$^\dagger$ \\
+\hspace*{1.5em}No use$^\dagger$ \\
+\hspace*{0.0em}\textbf{Tools-Current} \\
+\hspace*{1.5em}\textbf{Adopted Tools} \\
+\hspace*{3.0em}\textbf{Cloud services} \\
+\hspace*{4.5em}AWS \\
+\hspace*{3.0em}confluence$^\dagger$ \\
+\hspace*{3.0em}\textbf{Design and Brainstorming}$^\dagger$ \\
+\hspace*{4.5em}Figjam$^\dagger$ \\
+\hspace*{4.5em}Figma$^\dagger$ \\
+\hspace*{4.5em}Miro$^\dagger$ \\
+\hspace*{3.0em}\textbf{DS} \\
+\hspace*{4.5em}Airflow \\
+\hspace*{4.5em}Big Query \\
+\hspace*{4.5em}Blacklink \\
+\hspace*{4.5em}CDSW Workbench \\
+\hspace*{4.5em}Data quality and data monitoring \\
+\hspace*{4.5em}Databricks \\
+\hspace*{4.5em}DBT \\
+\hspace*{4.5em}Google Colab \\
+\hspace*{4.5em}Hadoop \\
+\hspace*{4.5em}Hive \\
+\hspace*{4.5em}I Source \\
+\hspace*{4.5em}Impala \\
+\hspace*{4.5em}Jupyter lab \\
+\hspace*{4.5em}Jupyter Notebook \\
+\hspace*{4.5em}MLFlow \\
+\hspace*{4.5em}Monitor logging \\
+\hspace*{4.5em}New Code \\
+\hspace*{4.5em}Python libraries \\
+\hspace*{4.5em}RapidMiner \\
+\hspace*{4.5em}SageMaker \\
+\hspace*{4.5em}Streamlit \\
+\hspace*{4.5em}Tableau \\
+\hspace*{3.0em}No tool or not utilized \\
+\hspace*{3.0em}\textbf{Programming and statistic analysis} \\
+\hspace*{4.5em}Pep8 \\
+\hspace*{4.5em}Python \\
+\hspace*{4.5em}R \\
+\hspace*{4.5em}SAS \\
+\hspace*{4.5em}Scala \\
+\hspace*{4.5em}SQL \\
+\hspace*{4.5em}Tkinter \\
+\hspace*{3.0em}\textbf{Project Management} \\
+\hspace*{4.5em}Asana$^\dagger$ \\
+\hspace*{4.5em}Jira \\
+\hspace*{4.5em}Monday \\
+\hspace*{4.5em}Trello$^\dagger$ \\
+\hspace*{3.0em}\textbf{SE} \\
+\hspace*{4.5em}Dependency checking tools \\
+\hspace*{4.5em}Git \\
+\hspace*{4.5em}Jenkins \\
+\hspace*{4.5em}Pre-commit \\
+\hspace*{4.5em}SonarQube \\
+\hspace*{4.5em}TKinter \\
+\hspace*{4.5em}Use case, business flow \\
+\hspace*{3.0em}\textbf{Testing and Feedback}$^\dagger$ \\
+\hspace*{4.5em}AB Testing Maze$^\dagger$ \\
+\hspace*{4.5em}Google Forms$^\dagger$ \\
+\hspace*{4.5em}Survey Question Pro$^\dagger$ \\
+\hspace*{1.5em}\textbf{Problems} \\
+\hspace*{3.0em}Cannot evaluate model due to modified data (hashed) \\
+\hspace*{3.0em}Connections between services from different vendors \\
+\hspace*{3.0em}cost$^\dagger$ \\
+\hspace*{3.0em}Difficulty in deployment \\
+\hspace*{3.0em}No or few documentation \\
+\hspace*{3.0em}Not using tools \\
+\hspace*{3.0em}Slow to run pipeline \\
+\hspace*{0.0em}\textbf{Tools-Future} \\
+\hspace*{1.5em}Auto cleaning of data \\
+\hspace*{1.5em}Auto visualization \\
+\hspace*{1.5em}CODE SUGGESTION$^\dagger$ \\
+\hspace*{1.5em}Collaboration tool \\
+\hspace*{1.5em}cost monitoring$^\dagger$ \\
+\hspace*{1.5em}Data quality measurement \\
+\hspace*{1.5em}deployment helper$^\dagger$ \\
+\hspace*{1.5em}Detection of data problems \\
+\hspace*{1.5em}DORA metrics for data products \\
+\hspace*{1.5em}Guarantee data behavior after data governance or PDPA \\
+\hspace*{1.5em}Integrating the DS project with client systems \\
+\hspace*{1.5em}Integration Tools to monitor all phases of development and maintenance \\
+\hspace*{1.5em}maintain code quality$^\dagger$ \\
+\hspace*{1.5em}Suggestion of library to use \\
+\hspace*{1.5em}Task-Workflow scheduling \\
+\hspace*{1.5em}Unrestricted tool use (AWS) without the organization restrictions \\
+\hspace*{0.0em}Types of DS products \\
+\end{longtable}
+
+\end{document}

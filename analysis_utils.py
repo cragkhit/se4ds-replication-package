@@ -47,7 +47,7 @@ FREQ_MAP = {
     '5 - ทำบ่อยที่สุด': 5,
 }
 
-# DS-process challenge severity (0–5 scale)
+# DS-process challenge frequency (0–5 scale)
 CHALLENGE_MAP = {
     '0 - ไม่พบปัญหา': 0,
     '1 - พบปัญหาน้อยที่สุด': 1,
@@ -104,6 +104,7 @@ FREQ_COLS = [
 ]
 
 DS_CHALLENGE_COLS = [
+    'challenges_header_challenge_high_learning_curve_of_business_[bu]',
     'challenge_misunderstanding_ds_users_[bu]',
     'challenge_new_unplanned_features_requests_[bu]',
     'challenge_data_cleansing_[dp]',
@@ -116,18 +117,20 @@ DS_CHALLENGE_COLS = [
 ]
 
 DS_CHALLENGE_LABELS = {
+    'challenges_header_challenge_high_learning_curve_of_business_[bu]': 'High learning curve of business [BU]',
     'challenge_misunderstanding_ds_users_[bu]':                    'Misunderstanding DS/users [BU]',
     'challenge_new_unplanned_features_requests_[bu]':              'New/unplanned feature requests [BU]',
     'challenge_data_cleansing_[dp]':                               'Data cleansing [DP]',
     'challenge_data_inconsistency_behaviour_drift_[dp]':           'Data inconsistency/drift [DP]',
     'challenge_incomplete_data_[dp_du]':                           'Incomplete data [DP/DU]',
     'challenge_learning_curve_data_exploration_[du]':              'Learning curve in data exploration [DU]',
-    'challenge_data_assertion_observability_monitoring_[dpm]':     'Data assertion/observability [DP/M]',
-    'challenge_model_monitoring_[dpm]':                            'Model monitoring [DP/M]',
+    'challenge_data_assertion_observability_monitoring_[dpm]':     'Data assertion/observability [DEP]',
+    'challenge_model_monitoring_[dpm]':                            'Model monitoring [DEP]',
     'challenge_fix_model_bug_[mod]':                               'Fixing model bugs [MOD]',
 }
 
 SE_CHALLENGE_COLS = [
+    'se_challenges_header_challenge_no_maintenance_documentation',
     'challenge_many_stakeholders',
     'challenge_no_integration_load_testing',
     'challenge_requirement_changes',
@@ -137,6 +140,7 @@ SE_CHALLENGE_COLS = [
 ]
 
 SE_CHALLENGE_LABELS = {
+    'se_challenges_header_challenge_no_maintenance_documentation': 'No documentation for maintenance',
     'challenge_many_stakeholders':           'Many stakeholders (hard to manage)',
     'challenge_no_integration_load_testing': 'No integration/load testing',
     'challenge_requirement_changes':         'Requirement changes mid-project',
@@ -177,6 +181,18 @@ METHOD_COLS = {
     'method_unit_testing':         'Unit testing',
     'method_use_case':             'Use case / user story',
     'method_containerization':     'Containerisation',
+}
+
+# Types of SE practice, used to report adoption per group (Table 9).
+PRACTICE_GROUPS = {
+    'Process and coordination':      ['se_methods_usage_header_method_scrum_kanban', 'method_standup',
+                                      'method_sprints'],
+    'Requirements and planning':     ['method_use_case', 'method_requirements_analysis',
+                                      'method_effort_estimation'],
+    'Quality assurance and testing': ['method_model_testing', 'method_code_review', 'method_unit_testing',
+                                      'method_integration_testing', 'method_uat',
+                                      'method_coding_convention', 'method_exit_criteria'],
+    'Engineering and deployment':    ['method_containerization', 'method_devops'],
 }
 
 # ---------------------------------------------------------------------------
@@ -221,7 +237,7 @@ def load_data(path=DATA_PATH):
     if bu_col in df.columns:
         df[bu_col] = df[bu_col].map(FREQ_MAP)
 
-    # Numeric conversions: DS challenge severity
+    # Numeric conversions: DS challenge frequency
     for c in DS_CHALLENGE_COLS:
         if c in df.columns:
             df[c] = df[c].map(CHALLENGE_MAP)
@@ -248,6 +264,14 @@ def load_data(path=DATA_PATH):
     # Overall SE adoption score
     curr_cols = [c + '_curr' for c in METHOD_COLS if c in df.columns]
     df['adoption_score'] = df[curr_cols].sum(axis=1)
+
+    # Answer flags for the robustness check in analysis_rq3 (section 3b).
+    # All percentages use all respondents: a blank counts as "not selected /
+    # not used / not current". 25 respondents submitted without answering any
+    # item in Parts 3-6 (reached_part3 is False).
+    phase_cols = [bu_col] + [c for c in FREQ_COLS if c.startswith('freq_') and c in df.columns]
+    df['reached_part3'] = df[phase_cols].notna().any(axis=1)
+    df['answered_practices'] = df[[c for c in METHOD_COLS if c in df.columns]].notna().any(axis=1)
 
     # Drop rows where future_se_methods and dream_tool_description are identical
     # (only when the shared answer is more than 3 words — single-word or very short

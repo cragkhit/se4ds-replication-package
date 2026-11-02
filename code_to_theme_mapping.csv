@@ -1,0 +1,79 @@
+theme,sub_theme,code,mentions
+Theme 1: DS process awareness & framework adoption,,Aware but do not use any specific framework,3
+Theme 1: DS process awareness & framework adoption,,CRISP-DM,3
+Theme 2: DS lifecycle phases & effort distribution,,Data preparation,4
+Theme 2: DS lifecycle phases & effort distribution,,Modeling,2
+Theme 2: DS lifecycle phases & effort distribution,,Business understanding,1
+Theme 2: DS lifecycle phases & effort distribution,,Data cleansing,1
+Theme 2: DS lifecycle phases & effort distribution,,Evaluation,1
+Theme 2: DS lifecycle phases & effort distribution,,Deployment,1
+Theme 3: DS challenges,"Theme 3a: Data quality, drift & evaluation",Data inconsistency or data behavior shift / data drift,1
+Theme 3: DS challenges,"Theme 3a: Data quality, drift & evaluation",Data assertion problem / data observability and monitoring,1
+Theme 3: DS challenges,"Theme 3a: Data quality, drift & evaluation",Lengthy A/B testing,1
+Theme 3: DS challenges,"Theme 3a: Data quality, drift & evaluation",Cannot evaluate model due to modified data (hashed),1
+Theme 3: DS challenges,Theme 3b: Requirements and communication,Misunderstanding between DS team and users,1
+Theme 3: DS challenges,Theme 3b: Requirements and communication,Many stakeholders,1
+Theme 3: DS challenges,Theme 3b: Requirements and communication,Requirement changes,1
+Theme 3: DS challenges,Theme 3b: Requirements and communication,Requirement gathering,1
+Theme 3: DS challenges,Theme 3c: Maintainability and analytic engineering practice,No documentation,1
+Theme 3: DS challenges,Theme 3c: Maintainability and analytic engineering practice,Analytic engineering,1
+Theme 3: DS challenges,Theme 3c: Maintainability and analytic engineering practice,DBT,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Stand-up meeting,3
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Agile,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Scrum or Kanban board,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Short releases or sprints,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Get team's suggestion,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Help following the plan,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Update progress with the team,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Use all 7 SE steps,1
+Theme 4: SE practices adopted,Theme 4a: Agile coordination,Requirements analysis and design,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",Integration testing,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",Model testing,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",UAT (User Acceptance Testing),1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",Exit criteria,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",Pre-commit,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",SonarQube,1
+Theme 4: SE practices adopted,"Theme 4b: Testing, quality & version control",Version control,1
+Theme 5: Future,Theme 5a: Desired SE practices,Cloud services,1
+Theme 5: Future,Theme 5a: Desired SE practices,DevOps (including CI/CD),1
+Theme 5: Future,Theme 5a: Desired SE practices,Requirement gathering patterns,1
+Theme 5: Future,Theme 5a: Desired SE practices,Maintain code quality,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Auto visualization,2
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Detection of data problems,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Data quality measurement,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Guarantee data behavior after data governance / PDPA,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",DORA metrics for data products,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Integrating the DS project with client systems,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Collaboration tool,1
+Theme 5: Future,"Theme 5b: Dream tools (automation, monitoring & integration)",Unrestricted tool use (AWS) without organizational restrictions,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Python libraries,3
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Python,2
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",R,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",SAS,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Scala,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Jupyter Notebook,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Jupyter Lab,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",PyCharm,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",CDSW Workbench,1
+Theme 6: Tools: usage and challenges,"Theme 6a: Languages, notebooks & IDEs",Local development,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",AWS,3
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",SageMaker,2
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Tableau,2
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",EC2,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Big Query,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Hadoop,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Databricks,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Dataflow,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Airflow,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Coltjob,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Streamlit,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",TensorFlow Serving,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",TorchServe,1
+Theme 6: Tools: usage and challenges,"Theme 6b: Cloud, data engineering & model serving",Predefined models,1
+Theme 6: Tools: usage and challenges,Theme 6c: Project management & collaboration,Jira,3
+Theme 6: Tools: usage and challenges,Theme 6c: Project management & collaboration,Git,3
+Theme 6: Tools: usage and challenges,Theme 6c: Project management & collaboration,Kanban board,1
+Theme 6: Tools: usage and challenges,Theme 6c: Project management & collaboration,Backlink,1
+Theme 6: Tools: usage and challenges,Theme 6c: Project management & collaboration,I Source,1
+Theme 6: Tools: usage and challenges,Theme 6d: Tool challenges,Connections between services from different vendors,1
+Theme 6: Tools: usage and challenges,Theme 6d: Tool challenges,Not using tools,1

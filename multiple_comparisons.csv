@@ -1,0 +1,43 @@
+section,test,variables,n,statistic,p,q,verdict
+Demographics,Kendall tau_b,DS experience x SE experience,112,0.51,6.857621879636753e-10,2.880201189447436e-08,significant
+RQ1,Kruskal-Wallis H,Business Understanding frequency by role,87,6.671,0.3523577778913053,0.7736227628396644,not significant
+RQ1,Kruskal-Wallis H,Data Understanding frequency by role,86,14.184,0.02765150380666878,0.38712105329336294,exploratory
+RQ1,Kruskal-Wallis H,Data Preparation frequency by role,87,9.933,0.1274951660489757,0.5949774415618866,not significant
+RQ1,Kruskal-Wallis H,Modeling frequency by role,87,3.911,0.6886666721089325,0.8764848554113687,not significant
+RQ1,Kruskal-Wallis H,Evaluation frequency by role,86,1.415,0.9649580751012784,0.9884936379086265,not significant
+RQ1,Kruskal-Wallis H,Deployment frequency by role,87,4.97,0.5477157450806858,0.8683986167444513,not significant
+RQ2,Kruskal-Wallis H,High learning curve of business [BU] by role,87,5.206,0.517669790633527,0.8683986167444513,not significant
+RQ2,Kruskal-Wallis H,Misunderstanding DS/users [BU] by role,87,3.185,0.7852682591946964,0.9423219110336358,not significant
+RQ2,Kruskal-Wallis H,New/unplanned feature requests [BU] by role,87,4.111,0.6616370413291057,0.8683986167444513,not significant
+RQ2,Kruskal-Wallis H,Data cleansing [DP] by role,84,6.95,0.3255013166117444,0.7736227628396644,not significant
+RQ2,Kruskal-Wallis H,Data inconsistency/drift [DP] by role,87,6.827,0.3371745779663587,0.7736227628396644,not significant
+RQ2,Kruskal-Wallis H,Incomplete data [DP/DU] by role,86,8.671,0.19295414295485228,0.7643070337293654,not significant
+RQ2,Kruskal-Wallis H,Learning curve in data exploration [DU] by role,87,12.888,0.04485704307927912,0.4709989523324307,exploratory
+RQ2,Kruskal-Wallis H,Data assertion/observability [DEP] by role,85,2.562,0.8614270503849266,0.9884936379086265,not significant
+RQ2,Kruskal-Wallis H,Model monitoring [DEP] by role,87,0.405,0.9988137279354785,0.9988137279354786,not significant
+RQ2,Kruskal-Wallis H,Fixing model bugs [MOD] by role,87,6.702,0.3492966813902008,0.7736227628396644,not significant
+RQ2,Spearman rho,DS experience x High learning curve of business [BU],87,0.006,0.956770857799146,0.9884936379086265,not significant
+RQ2,Spearman rho,DS experience x Misunderstanding DS/users [BU],87,0.13,0.23088275631453165,0.7736227628396644,not significant
+RQ2,Spearman rho,DS experience x New/unplanned feature requests [BU],87,0.072,0.5100222261004715,0.8683986167444513,not significant
+RQ2,Spearman rho,DS experience x Data cleansing [DP],84,-0.063,0.5688175347647179,0.8683986167444513,not significant
+RQ2,Spearman rho,DS experience x Data inconsistency/drift [DP],87,-0.006,0.9525735417959529,0.9884936379086265,not significant
+RQ2,Spearman rho,DS experience x Incomplete data [DP/DU],86,0.049,0.6534392885081668,0.8683986167444513,not significant
+RQ2,Spearman rho,DS experience x Learning curve in data exploration [DU],87,-0.013,0.9037477701820573,0.9884936379086265,not significant
+RQ2,Spearman rho,DS experience x Data assertion/observability [DEP],85,-0.049,0.6559623909223516,0.8683986167444513,not significant
+RQ2,Spearman rho,DS experience x Model monitoring [DEP],87,-0.032,0.7716145043278936,0.9423219110336358,not significant
+RQ2,Spearman rho,DS experience x Fixing model bugs [MOD],87,-0.051,0.6374139418409165,0.8683986167444513,not significant
+RQ2,Spearman rho,SE experience x High learning curve of business [BU],87,0.17,0.11583774128913223,0.5949774415618866,not significant
+RQ2,Spearman rho,SE experience x Misunderstanding DS/users [BU],87,0.062,0.5688275287280771,0.8683986167444513,not significant
+RQ2,Spearman rho,SE experience x New/unplanned feature requests [BU],87,0.081,0.4570077026726311,0.8683986167444513,not significant
+RQ2,Spearman rho,SE experience x Data cleansing [DP],84,0.056,0.6134376514483045,0.8683986167444513,not significant
+RQ2,Spearman rho,SE experience x Data inconsistency/drift [DP],87,0.091,0.4024506923921668,0.8049013847843336,not significant
+RQ2,Spearman rho,SE experience x Incomplete data [DP/DU],86,0.14,0.20017565169102425,0.7643070337293654,not significant
+RQ2,Spearman rho,SE experience x Learning curve in data exploration [DU],87,0.006,0.9583785865177359,0.9884936379086265,not significant
+RQ2,Spearman rho,SE experience x Data assertion/observability [DEP],85,0.186,0.08847495113346704,0.5949774415618866,not significant
+RQ2,Spearman rho,SE experience x Model monitoring [DEP],87,0.174,0.10657945059961293,0.5949774415618866,not significant
+RQ2,Spearman rho,SE experience x Fixing model bugs [MOD],87,0.125,0.2496010995049748,0.7736227628396644,not significant
+RQ3,Spearman rho,SE experience x adoption score,112,0.247,0.008656346879887044,0.18178328447762793,exploratory
+RQ3,Spearman rho,DS experience x adoption score,112,0.086,0.3683917918284116,0.7736227628396644,not significant
+RQ3,Kruskal-Wallis H,adoption score by role,112,7.071,0.31436628862559,0.7736227628396644,not significant
+RQ3,Kruskal-Wallis H,adoption score by organization type,112,3.781,0.286076199114912,0.7736227628396644,not significant
+RQ3,Kruskal-Wallis H,adoption score by DS framework knowledge,112,5.461,0.06518497948898686,0.5475538277074896,not significant
